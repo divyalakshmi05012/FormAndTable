@@ -38,9 +38,9 @@ table{
 }
 #food{
     border: 1px solid black !important;
+    width: 100%;
 }
-@media(max-width:400px){
-    table{
-        width: 50%;
-    }
+
+#multi-select{
+    border: 1px solid black !important;
 }

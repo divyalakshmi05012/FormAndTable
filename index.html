@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>form and table</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.css" rel="stylesheet">
     <link href="./index.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag@3.0.1/dist/css/multi-select-tag.css">
+   
 </head>
 <body>
 
@@ -29,14 +31,15 @@
             <input type="radio" name="gender" value="other" id="gender"> Others <br><br>
 
             <label for="food" >Choice Of Food:</label>
-            <select id="food" multiple>
-            <option placeholder="select">select</option>
-            <option value="biriyani">Biriyani</option>
-            <option value="fried rice">Fried rice</option>
-            <option value="Chappathi">Chappathi</option>
-            <option  value="Meals">Meals</option>
-            <option value="Varity Rice">Varity Rice</option>
+            <div id="multi-select">
+            <select id="food"  class="my-select w-100"  multiple data-selected-text-format="count > 2">
+            <option >Biriyani</option>
+            <option >Fried rice</option>
+            <option >Chappathi</option>
+            <option >Meals</option>
+            <option >Varity Rice</option>
             </select>
+             </div>
             
             <br><br>
             <label for="state">State:</label>
@@ -63,7 +66,10 @@
             </thead>
         </table>
     </div>
-    <script src="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag@3.0.1/dist/js/multi-select-tag.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/js/bootstrap-select.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.js"></script>
     <script src="./index.js"></script>
 </body> 
 </html>

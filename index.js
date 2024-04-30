@@ -1,5 +1,8 @@
 
-new MultiSelectTag('food') 
+$(document).ready(function(){
+    $('.my-select').selectpicker();
+})
+
 
 var n = 1;
 var x = 0;
